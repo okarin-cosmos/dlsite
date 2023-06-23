@@ -7,7 +7,19 @@ body {
     text-decoration: none;
   }
 
-  .container {
+div {
+  display: block;
+}
+
+div, h1, h2, h3, h4, h5, h6, p, dl, dt, dd, ul, ol, li, blockquote, pre, table, caption, th, td, address, form, fieldset, legend, img {
+  margin: 0;
+  padding: 0;
+  font-weight: normal;
+  font-style: normal;
+  text-align: left;
+}
+
+  .containers {
     width: 1170px;
     padding: 0 15px;
     margin: 0 auto;
@@ -46,6 +58,7 @@ body {
   }
   
   .header-right {
+    line-height: 65px;
     float: right;
     background-color: rgba(255, 255, 255, 0.3);
     transition: all 0.5s;
@@ -82,16 +95,82 @@ body {
     text-align: left;
 }
 
-  .work {
-    float: left;
-    width: 25%;
-  }
+.works-list{
+  position: relative;
+}
+
+h3.work-subheading{
+  background: #f5f7fa;
+  color: #536280;
+  font-size: 15px;
+  font-weight: bold;
+  height: 30px;
+  line-height: 30px;
+  padding-left: 8px;
+  border-radius: 2px;
+  margin: 14px 0 14px;
+}
+
+.work_subheading .heading_link {
+  font-size: 12px;
+  position: absolute;
+  right: 28px;
+  display: inline-flex;
+  align-items: center;
+}
+
+.rinking-wrapper {
+  transform: translate3d(0,0,0);
+}
+
+.rinking-wrapper {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  box-sizing: content-box;
+}
+
+.rinking-slide {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
   
-  
-  
-  .work p {
+.works-list img {
     position: absolute;
-    top: 90px;
-    width: 100%;
-    color: #000080;
-  }
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    max-width: 100%;
+    max-height: 100%;
+    margin: auto;
+}
+
+.recommend_list .rank_number.type_rank01 {
+  background-position: 0 0;
+}
+
+.rinking-work-item {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  width: 160px;
+  height: 100%;
+  margin: 0 auto;
+  box-sizing: border-box;
+  padding-bottom: 29px;
+  backface-visibility: hidden;
+  transition: none;
+}
+
+.rinking-work-item.details {
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 auto;
+}

@@ -21,4 +21,7 @@ mix.js('resources/js/topstylesheet.js', 'public/js')
     //
 ])
 
-
+mix.js('resources/js/test.js', 'public/js')
+.postCss('resources/css/test.css', 'public/css', [
+    //
+])
